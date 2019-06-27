@@ -411,7 +411,7 @@ class Config:
                 interfaces.update({docker_interface: all_interfaces.get(docker_interface)})
 
             for interface, ip_address in interfaces.items():
-                CLI.colored_print("\t{}) {}".format(interface, ip_address))
+#                 CLI.colored_print("\t{}) {}".format(interface, ip_address))
 
             choices = [str(interface) for interface in interfaces.keys()]
             choices.append("other")
@@ -452,7 +452,8 @@ class Config:
             "internal_domain_name": "docker.internal",
             "private_domain_name": "kobo.private",
             "public_domain_name": "kobo.local",
-            "kpi_subdomain": "kf",
+            #"kpi_subdomain": "kf",
+            "kpi_subdomain": "",
             "kc_subdomain": "kc",
             "ee_subdomain": "ee",
             "postgres_db": "kobotoolbox",
