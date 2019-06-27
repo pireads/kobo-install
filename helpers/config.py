@@ -411,7 +411,7 @@ class Config:
                 interfaces.update({docker_interface: all_interfaces.get(docker_interface)})
 
             for interface, ip_address in interfaces.items():
-#                 CLI.colored_print("\t{}) {}".format(interface, ip_address))
+                 CLI.colored_print("\t{}) {}".format(interface, ip_address))
 
             choices = [str(interface) for interface in interfaces.keys()]
             choices.append("other")
